@@ -25,10 +25,11 @@
 
                 while($dado = mysqli_fetch_array($dados_select)) {
                         echo '<tr>';
-                        echo '<td>'.$dado[0].'</td>';
                         echo '<td>'.$dado[1].'</td>';
                         echo '<td>'.$dado[2].'</td>';
+                        echo '<td>'.$dado[3].'</td>';
                         echo "<td><a href='./excluir.php?id=".$dado[0]."'>Excluir</a></td>";
+                        echo "<td><a href='./edicaofilme.php?id=".$dado[0]."'>Edição</a></td>";
                         echo '</tr>';
                 }
             ?>
